@@ -92,3 +92,34 @@ a {
     --section-spacing: 80px;
   }
 }
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+p {
+  color: var(--color-muted);
+  max-width: 65ch;
+  font-size: 1rem;
+}
