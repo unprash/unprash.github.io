@@ -1,1 +1,94 @@
+/* =========================
+   RESET
+========================= */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+  --container-width: 1280px;
+
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-muted: #666666;
+  --color-border: #e5e7eb;
+
+  --radius: 24px;
+
+  --section-spacing: 120px;
+}
+
+/* =========================
+   BASE
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: min(92%, var(--container-width));
+  margin-inline: auto;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+  padding: var(--section-spacing) 0;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   BENTO GRID
+========================= */
+
+.bento-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.bento-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 80px;
+  }
+}
