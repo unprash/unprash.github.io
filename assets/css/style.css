@@ -137,9 +137,17 @@ a {
 ========================= */
 
 @media (max-width: 768px) {
+
   :root {
     --section-spacing: 80px;
   }
+
+  .nav-wrapper {
+    gap: 20px;
+    padding: 18px 20px;
+    overflow-x: auto;
+  }
+
 }
 /* =========================
    TYPOGRAPHY
