@@ -114,7 +114,29 @@ a {
 .nav-wrapper a:hover {
   opacity: 0.6;
 }
+/* Mobile Menu Button */
 
+.menu-toggle {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+
+  width: 28px;
+  height: 2px;
+
+  background: #111111;
+
+  margin: 7px 0;
+
+  border-radius: 999px;
+}
 /* =========================
    HERO TEMPORARY
 ========================= */
@@ -180,6 +202,20 @@ p {
   :root {
     --section-spacing: 80px;
   }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+}
 
   .navbar {
     padding: 12px;
